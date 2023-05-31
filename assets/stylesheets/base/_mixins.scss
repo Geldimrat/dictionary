@@ -1,0 +1,11 @@
+@mixin flexBox($x, $y) {
+  display: flex;
+  align-items: $y;
+  justify-content: $x;
+}
+
+@mixin mobile {
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}

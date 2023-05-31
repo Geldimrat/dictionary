@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #111718;
+}
+
+.home {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+  background: #111718;
+  padding-top: 90px;
+  padding-bottom: 60px;
+}
+
+@media screen and (max-width: 600px) {
+  .home {
+    padding-top: 180px;
+  }
+}
+
+.home .header {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px 0;
+  -webkit-box-shadow: 0 0 2px 2px gray;
+          box-shadow: 0 0 2px 2px gray;
+  border-radius: 0 0 20px 20px;
+  background: #111718;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+}
+
+.home .header .content {
+  width: 85%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+  .home .header .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home .header .content .logo {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.home .header .content .logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.home .header .content .logo .add_word_btn1 {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .home .header .content .logo .add_word_btn1 {
+    display: block;
+  }
+}
+
+.home .header .content .logo .add_word_btn1 a {
+  text-align: center;
+  display: block;
+  padding: 10px 30px;
+  background: #f60000;
+  border: none;
+  border-radius: 8px;
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .home .header .content .logo .add_word_btn1 a {
+    width: 150px;
+  }
+}
+
+.home .header .content .search_word {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 2px solid gray;
+  border-radius: 30px;
+  width: 545px;
+}
+
+@media screen and (max-width: 600px) {
+  .home .header .content .search_word {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 8px;
+  }
+}
+
+.home .header .content .search_word .input {
+  width: 90%;
+  border-radius: 30px 0 0 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .home .header .content .search_word .input {
+    width: 85%;
+  }
+}
+
+.home .header .content .search_word .input input {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 30px 0 0 30px;
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  outline: none;
+  border: none;
+  background: none;
+  color: white;
+}
+
+.home .header .content .search_word .icon {
+  width: 10%;
+  padding: 10px;
+  border-radius: 0 30px 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  border-left: 2px solid gray;
+}
+
+@media screen and (max-width: 600px) {
+  .home .header .content .search_word .icon {
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home .header .content .add_word_btn {
+    display: none;
+  }
+}
+
+.home .header .content .add_word_btn a {
+  display: block;
+  padding: 10px 30px;
+  background: #f60000;
+  border: none;
+  border-radius: 8px;
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.home .words {
+  width: 100%;
+}
+
+.home .words .content {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.home .words .content .translated_word {
+  margin-top: 50px;
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 10px gray;
+          box-shadow: 0px 0px 10px gray;
+  border-radius: 5px;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+@media screen and (max-width: 600px) {
+  .home .words .content .translated_word {
+    padding: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.home .words .content .translated_word .word_info:not(:first-child) {
+  margin-left: 25%;
+}
+
+@media screen and (max-width: 600px) {
+  .home .words .content .translated_word .word_info:not(:first-child) {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+}
+
+.home .words .content .translated_word .word_info .name {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #858585;
+}
+
+.home .words .content .translated_word .word_info .word {
+  margin-top: 10px;
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #eee;
+}
+/*# sourceMappingURL=main.css.map */

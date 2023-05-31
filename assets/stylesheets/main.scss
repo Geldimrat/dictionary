@@ -1,0 +1,200 @@
+// base folder
+@import "./base/reset", "./base/variables", "./base/mixins";
+
+.home {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+  background: rgb(17, 23, 24);
+  padding-top: 90px;
+  padding-bottom: 60px;
+
+  @include mobile {
+    padding-top: 180px;
+  }
+
+  .header {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px 0;
+    box-shadow: 0 0 2px 2px gray;
+    border-radius: 0 0 20px 20px;
+    background: rgb(17, 23, 24);
+    position: fixed;
+    top: 0;
+    z-index: 9;
+
+    .content {
+      width: 85%;
+      margin: 0 auto;
+      @include flexBox(space-between, center);
+
+      @include mobile {
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .logo {
+        @include mobile {
+          width: 100%;
+          @include flexBox(space-between, center);
+        }
+        img {
+          width: 50px;
+          height: 50px;
+        }
+
+        .add_word_btn1 {
+          display: none;
+
+          @include mobile {
+            display: block;
+          }
+
+          a {
+            @include mobile {
+              width: 150px;
+            }
+            text-align: center;
+            display: block;
+            padding: 10px 30px;
+            background: #f60000;
+            border: none;
+            border-radius: 8px;
+            font-family: "Nunito Sans", sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+          }
+        }
+      }
+
+      .search_word {
+        @include flexBox(space-between, center);
+        border: 2px solid gray;
+        border-radius: 30px;
+        width: 545px;
+
+        @include mobile {
+          width: 100%;
+          margin-top: 30px;
+          margin-bottom: 8px;
+        }
+
+        .input {
+          width: 90%;
+          border-radius: 30px 0 0 30px;
+          @include mobile {
+            width: 85%;
+          }
+          input {
+            width: 100%;
+            padding: 10px 15px;
+            border-radius: 30px 0 0 30px;
+            font-family: "Avenir Next Cyr", sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            outline: none;
+            border: none;
+            background: none;
+            color: white;
+          }
+        }
+
+        .icon {
+          width: 10%;
+          @include mobile {
+            width: 15%;
+          }
+          padding: 10px;
+          border-radius: 0 30px 30px 0;
+          @include flexBox(center, center);
+          cursor: pointer;
+          border-left: 2px solid gray;
+        }
+      }
+
+      .add_word_btn {
+        @include mobile {
+          display: none;
+        }
+
+        a {
+          display: block;
+          padding: 10px 30px;
+          background: #f60000;
+          border: none;
+          border-radius: 8px;
+          font-family: "Nunito Sans", sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 22px;
+          color: white;
+          cursor: pointer;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .words {
+    width: 100%;
+    
+    .content {
+      width: 85%;
+      margin: 0 auto;
+
+      .translated_word {
+        margin-top: 50px;
+        width: 100%;
+        box-shadow: 0px 0px 10px gray;
+        border-radius: 5px;
+        padding: 50px;
+        @include flexBox(flex-start, center);
+
+        @include mobile {
+          padding: 30px;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .word_info {
+          &:not(:first-child) {
+            margin-left: 25%;
+
+            @include mobile {
+              margin-top: 30px;
+              margin-left: 0;
+            }
+          }
+          .name {
+            font-family: "Nunito Sans", sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            color: #858585;
+          }
+
+          .word {
+            margin-top: 10px;
+            font-family: "Nunito Sans", sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+            color: #eee;
+          }
+        }
+      }
+    }
+  }
+}
