@@ -5,6 +5,7 @@ let entered_word = document.getElementById('entered_word');
 let search_btn = document.getElementById('search_btn');
 let words_container = document.getElementById('words')
 let add_word_btn = document.getElementById('add_word_btn')
+let add_word_btn1 = document.getElementById('add_word_btn1')
 let words_text = ''
 
 for (let i = 3; i < 8; i++) {
@@ -93,12 +94,12 @@ function show_all_words() {
             </div>
         `
     })
-
     words_container.innerHTML = words_text
 }
 
 
 add_word_btn.addEventListener('click', show_all_words)
+add_word_btn1.addEventListener('click', show_all_words)
 search_btn.addEventListener('click', find_word_fn)
 entered_word.addEventListener('keyup', (e) => {
     if (e.key === "Enter") {
