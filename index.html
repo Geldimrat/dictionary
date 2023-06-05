@@ -14,14 +14,19 @@
           <div class="logo">
             <img src="./assets/images/logo.png" alt="" />
             <div class="add_word_btn1">
-              <a href="">All Words</a>
+              <button id="add_word_btn">All Words</button>
             </div>
           </div>
           <div class="search_word">
             <div class="input">
-              <input type="text" placeholder="Enter word..." required />
+              <input
+                type="text"
+                placeholder="Enter word..."
+                id="entered_word"
+                required
+              />
             </div>
-            <div class="icon">
+            <div class="icon" id="search_btn">
               <svg
                 width="20"
                 height="20"
@@ -37,73 +42,16 @@
             </div>
           </div>
           <div class="add_word_btn">
-            <a href="">All Words</a>
+            <button id="add_word_btn">All Words</button>
           </div>
         </div>
       </div>
 
       <div class="words">
-        <div class="content">
-          <div class="translated_word">
-            <div class="word_info">
-              <p class="name">English</p>
-              <p class="word">Hello</p>
-            </div>
-            <div class="word_info">
-              <p class="name">Spanish</p>
-              <p class="word">Hola</p>
-            </div>
-            <div class="word_info">
-              <p class="name">Example</p>
-              <p class="word">Hello</p>
-            </div>
-          </div>
-          <div class="translated_word">
-            <div class="word_info">
-              <p class="name">English</p>
-              <p class="word">Hello</p>
-            </div>
-            <div class="word_info">
-              <p class="name">Spanish</p>
-              <p class="word">Hola</p>
-            </div>
-            <div class="word_info">
-              <p class="name">Example</p>
-              <p class="word">Hello</p>
-            </div>
-          </div>
-          <div class="translated_word">
-            <div class="word_info">
-              <p class="name">English</p>
-              <p class="word">Hello</p>
-            </div>
-            <div class="word_info">
-              <p class="name">Spanish</p>
-              <p class="word">Hola</p>
-            </div>
-            <div class="word_info">
-              <p class="name">Example</p>
-              <p class="word">Hello</p>
-            </div>
-          </div>
-          <div class="translated_word">
-            <div class="word_info">
-              <p class="name">English</p>
-              <p class="word">Hello</p>
-            </div>
-            <div class="word_info">
-              <p class="name">Spanish</p>
-              <p class="word">Hola</p>
-            </div>
-            <div class="word_info">
-              <p class="name">Example</p>
-              <p class="word">Hello</p>
-            </div>
-          </div>
-        </div>
+        <div class="content" id="words"></div>
       </div>
     </section>
 
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js" type="module"></script>
   </body>
 </html>

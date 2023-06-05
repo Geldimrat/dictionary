@@ -94,7 +94,7 @@ body {
   }
 }
 
-.home .header .content .logo .add_word_btn1 a {
+.home .header .content .logo .add_word_btn1 button {
   text-align: center;
   display: block;
   padding: 10px 30px;
@@ -112,7 +112,7 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .home .header .content .logo .add_word_btn1 a {
+  .home .header .content .logo .add_word_btn1 button {
     width: 150px;
   }
 }
@@ -195,7 +195,7 @@ body {
   }
 }
 
-.home .header .content .add_word_btn a {
+.home .header .content .add_word_btn button {
   display: block;
   padding: 10px 30px;
   background: #f60000;
@@ -230,9 +230,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -251,14 +251,15 @@ body {
   }
 }
 
-.home .words .content .translated_word .word_info:not(:first-child) {
-  margin-left: 25%;
+.home .words .content .translated_word .word_info {
+  width: 33%;
 }
 
 @media screen and (max-width: 600px) {
-  .home .words .content .translated_word .word_info:not(:first-child) {
+  .home .words .content .translated_word .word_info {
     margin-top: 30px;
     margin-left: 0;
+    width: 100%;
   }
 }
 
